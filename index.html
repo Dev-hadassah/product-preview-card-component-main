@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Darkcyan: '#3c8067',
+            Cream: '#f2ebe3',
+             Verydarkblue: '#1c232b',
+             Darkgrayishblue: '#6c7289',
+             White: '#ffffff',
+          },
+          fontFamily: {
+            Fraunces: ['Fraunces', 'serif'],
+            Montserrat: ['Montserrat', 'sans-serif']
+           
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="grid content-center justify-items-center py-10 md:h-screen bg-Cream font-Montserrat">
+<div class="lg:grid grid-cols-2 lg:h-[500px] h-[300px] my-5 mb-16">
+  <img src="images/image-product-desktop.jpg" alt="Perfume image" class="md:block hidden lg:w-[300px] h-full lg:object-cover lg:rounded-l-xl"/>
+  <img src="images/image-product-desktop.jpg" alt="Perfume image" class="md:hidden w-[350px] h-[200px] object-cover rounded-t-lg"/>
+
+  
+  <div class="bg-white w-[350px] lg:w-[300px] p-5 lg:p-9 lg:h-[500px] lg:rounded-r-xl " >
+   
+    <p class="uppercase tracking-[0.3em] lg:tracking-[0.5em] font-light mb-4 lg:mb-6 md:text-sm text-Darkgrayishblue">Perfume</p>
+  
+    <h1 class="font-bold text-[34px] leading-9 lg:text-3xl font-Fraunces mb-4 lg:mb-6">Gabrielle Essence Eau De Parfume</h1>
+
+    <p class="mb-6 md:w[300px] text-Darkgrayishblue">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>
+  
+    <p class="flex text-3xl text-Darkcyan mb-6 font-bold gap-x-4 font-Fraunces">$149.99 <s class="text-base font-normal text-Darkgrayishblue pt-1">$169.99</s></p> 
+   
+   
+  
+    <button class="flex item-center justify-center text-white gap-x-3 w-full text-bold bg-Darkcyan hover:bg-Verydarkblue rounded-lg py-3"><img src="images/icon-cart.svg" />Add to Cart</button>
+  </div>
+</div>
+<br/>
+</body>
+</html>
